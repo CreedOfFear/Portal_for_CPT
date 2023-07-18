@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load static %}
+<title>{% block title %} Главная страница {% endblock title %}</title>
+{% block content %}
+<h1 align="center">Главная страница</h1>
+<br>
+<h3 align="center">Новости ЦПТ</h3>
+<div class="b-example-divider"></div>
+<div class="container text-left">
+  <div class="row align-items-start">
+    <div class="col">
+      <ul class="ul">
+      <li><h5>Выполнение прикладных научно-исследовательских работ, 
+        предусмотренных государственными заданиями, 
+        а также инициативных научных исследований по направлениям генной инженерии и терапии, 
+        новых методов молекулярной диагностики заболеваний человека</h5></li> <hr>
+      <li><h5>Оказание консультативной и практической помощи лабораториям молекулярной диагностики медицинских учреждений, 
+        проводящих текущую и экстренную работу по предотвращению и расшифровке вспышек инфекционных заболеваний</h5></li><hr>
+      <li><h5>Разработка нормативных документов и методических рекомендаций, 
+        регламентирующих работу молекулярно-биологических лабораторий</h5></li>
+      </ul>
+    </div>
+    <div class="col">
+      <ul class="ul">
+        <li><h5>Производство наборов реагентов на основе молекулярно-биологических методов 
+          исследований для диагностики генетических и инфекционных заболеваний.</h5></li><hr>
+        <li><h5>Проведение курсов повышения квалификации по молекулярной диагностике для практических учреждений России и стран СНГ</h5></p><hr>
+        <li><h5>Практическая лабораторная диагностика инфекционных и соматических заболеваний</h5></li><hr>
+        <li><h5>Разработка новых изделий медицинского назначения</h5></li><hr>
+        <li><h5>Создание и развитие лабораторной базы</h5></li>
+        </ul>
+    </div>
+<div class="container text-center">  
+<div class="row align-items-center">
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="5000">
+        <img src="/static/img/1.jpg" class="d-block w-100" alt="Slide 1">
+      </div>
+      <div class="carousel-item" data-bs-interval="5000"> <img src="/static/img/2.jpg" class="d-block w-100" alt="Slide 2">
+      </div>
+      <div class="carousel-item" data-bs-interval="5000"><img src="/static/img/3.jpg" class="d-block w-100" alt="Slide 3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+ 
+  </div>
+</div>
+
+{% endblock %}
